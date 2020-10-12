@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #fadadd;
+    }
+    .cakebox {
+      width: 500px;
+      height: 500px;
+      margin: 0 auto;
+      position: relative;
+      top: 40%;
+      text-align: center;
+    }
+    .cake {
+      width: 200px;
+      height: 150px;
+      background-color: white;
+      border-radius: 5%;
+      position: absolute;
+      top: 200px;
+      left: 150px;
+
+    }
+    .frosting {
+      height: 10px;
+      width: 100%;
+      background-color: crimson;
+      padding-left: 2px;
+    }
+
+    .frosting-2 {
+      position: absolute;
+      top: 70px;
+    }
+    .caketray {
+      border-bottom: 5px solid brown;
+      width: 300px;
+      height: 300px;
+      border-radius: 10%;
+      position: absolute;
+      top: 50px;
+      left: 99px;
+    }
+    .frostingdrop {
+      height: 20px;
+      width: 15px;
+      background-color: crimson;
+      border-radius: 0 0 50% 50%;
+      float: left;
+    }
+    .candlecontainer {
+      position: absolute;
+      top:150px;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+    }
+    .candle {
+      width: 5px;
+      height: 50px;
+      background-color: orange;
+      float: left;
+      margin-left: 3px;
+    }
+    
+    .candle:nth-of-type(7n-6) {
+      background-color: orange;
+    }
+    .candle:nth-of-type(7n-5) {
+      background-color: purple;
+    }
+    .candle:nth-of-type(7n-4) {
+      background-color: blue;
+    }
+    .candle:nth-of-type(7n-3) {
+      background-color: red;
+    }
+    .candle:nth-of-type(7n-2) {
+      background-color: green;
+    }
+    .candle:nth-of-type(7n-1) {
+      background-color: yellow;
+    }
+    .candle:nth-of-type(7n) {
+      background-color: cyan;
+    }
+
+    .flame {
+      width: 5px;
+      height: 5px;
+      background-color: orange;
+      border-radius: 50%;
+      margin-top: -8px;
+    }
+
+    .flametop {
+      background-color: orange;
+      margin-top: -8px;
+      width: 5px;
+      height: 5px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      animation: flicker 1s infinite;
+      animation-direction: alternate;
+    }
+
+      @keyframes flicker {
+        0% {
+          transform: rotate(-20deg);
+        }
+        50% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(20deg);
+        }
+      }
+
+      .happybirthday {
+        padding: 20px;
+        background-color: white;
+        width: 400px;
+        transform: rotate(-30deg);
+        position: absolute;
+        left: 40%;
+        top: 300px;
+        border: 2px dashed red;
+        display: none;
+      }
+      .makeawish {
+        width: 175px;
+        position: absolute;
+        left: 20%;
+
+      }
+
+  </style>
+</head>
+<body>
+  <img src="make.png" class="makeawish">
+  <div class="cakebox">
+    <div class="candlecontainer" onclick="blow()">
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+      <div class="candle">
+        <div class="flame"></div>
+        <div class="flametop"></div>
+      </div>
+    </div>
+    <div class="cake">
+      <div class="frosting frosting-1">
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+    </div>
+      <div class="frosting frosting-2">
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      <div class="frostingdrop"></div>
+      </div>
+    </div>
+    <div class="caketray"></div>
+  </div>
+  <div class="happybirthday">
+
+    <h2>Happy birthday, Jake!</h2>
+    <p>I think you're awesome. Keep that hacker spirit alive.</p>
+    <p>-Justus</p>
+
+  </div>
+  <script src="jquery.min.js"></script>
+    <script>
+
+
+      $('body  ').click(function() {
+        $(".flame, .flametop").hide();
+        $(' .happybirthday ').show();
+        $(' .makeawish ').hide();
+            });
+    </script>
+</body>
+</html>
